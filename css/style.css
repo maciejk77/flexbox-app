@@ -1,21 +1,61 @@
 .l-flexapp {
-
+	background-color: #5a5a5a;
 }
 
 .l-flexapp_card-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+	height: 600px;
+	
 
+	
 }
 
 .l-flexapp_card {
-	background-color: blue;
-  margin-bottom: 20px;
+	/*background-color: blue;*/
+  /*margin-bottom: 20px;*/
 }
 
 .card {
-	background-color: red;
+	/*background-color: red;*/
 	text-align: center;
-
 }
 
+/* Styling around cards */
 
+.green, 
+.red,
+.orange,
+.blue {
+	padding: 20px;
+	color: white;
+	font-family: Verdana;
+	font-size: 20px;
+}
 
+.green {
+	background-color: green;
+	font-size: 10px;
+	order: 2;
+}
+
+.red {
+	background-color: red;
+	order: -3;
+	align-self: center;	
+}
+
+.orange {
+	background-color: orange;
+	font-size: 40px;
+	align-self: flex-end;
+}
+
+.blue {
+	background-color: blue;
+	font-size: 30px;
+	order: -2;
+	align-self: stretch;
+}
